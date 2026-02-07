@@ -1,30 +1,19 @@
-# XSS Detector
+# XSS Vulnerability Scanner & Lab 🛡️🐍
 
-Um script em Python que automatiza a detecção de vulnerabilidades **Cross-Site Scripting (XSS)** em sites, utilizando o Selenium para encontrar campos de entrada e testar payloads.
+Este projeto é uma ferramenta de segurança desenvolvida em **Python** para fins **estritamente educacionais**. O objetivo é demonstrar o funcionamento de vulnerabilidades Cross-Site Scripting (XSS) e como automatizar a detecção de falhas em ambientes de teste.
 
-## Índice
-1. Funcionalidades
-2. Requisitos
-3. Instalação
-4. Como Usar
-5. Aviso Legal
-6. Licença
-7. Próximos Passos
+> ⚠️ **AVISO LEGAL:** O uso desta ferramenta contra alvos sem permissão expressa é ilegal. O autor não se responsabiliza pelo uso indevido. Destinado apenas a laboratórios de CTF e Pentest.
 
-## Funcionalidades
-- Detecta automaticamente campos de entrada em páginas web.
-- Injeta payloads XSS para identificar vulnerabilidades.
-- Exibe respostas do site no terminal para análise.
-- Mantém o navegador aberto para observação manual.
+## 🛡️ Funcionalidades (Python Powered)
 
-## Requisitos
-- **Python 3.10+**
-- **Selenium**
-- **Google Chrome**
-- **ChromeDriver** (compatível com a versão do navegador)
+- [x] **Análise Dinâmica**: Envio de payloads via requisições HTTP (`requests`).
+- [x] **Parsing de HTML**: Identificação de reflexão de scripts no DOM usando `BeautifulSoup`.
+- [x] **Automação de Payloads**: Dicionário customizável de vetores de ataque.
+- [x] **Detecção de Filtros**: Verifica se caracteres como `< > /` estão sendo sanitizados pelo servidor.
 
-## Instalação
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/LeonardoCides/system-xss
-   cd xss-detector
+## 🛠 Tecnologias e Bibliotecas
+
+* **Python 3.x**
+* **Requests**: Para manipulação de requisições HTTP.
+* **BeautifulSoup4**: Para analisar a resposta HTML do alvo.
+* **Colorama**: Para logs coloridos e legíveis no terminal.
