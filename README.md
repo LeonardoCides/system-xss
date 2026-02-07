@@ -13,7 +13,7 @@ Este projeto é uma ferramenta de segurança desenvolvida em **Python** para fin
 
 ## 🛠 Tecnologias e Bibliotecas
 
-* **Python 3.x**
+* **Python 3**
 * **Requests**: Para manipulação de requisições HTTP.
 * **BeautifulSoup4**: Para analisar a resposta HTML do alvo.
 * **Colorama**: Para logs coloridos e legíveis no terminal.
